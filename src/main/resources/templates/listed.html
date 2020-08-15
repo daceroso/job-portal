@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Jobs list</title>
+</head>
+<body>
+    <h1>Avaliable Jobs</h1>
+    <ol>
+        <li th:each="job:${jobs}" th:text="${job}"></li>
+    </ol>
+</body>
+</html>
