@@ -80,6 +80,8 @@ public class HomeController {
             vacancyOne.setDescriptionVacancy("Solicitamos Ing. Civil para diseñar puente peatonal.");
             vacancyOne.setDatePublished(date.parse("08-02-2019"));
             vacancyOne.setSalary(2300.0);
+            vacancyOne.setTopVacancy(1);
+            vacancyOne.setImage("companyOne.png");
 
             // create vacancy 2
             Vacancy vacancyTwo = new Vacancy();
@@ -88,6 +90,8 @@ public class HomeController {
             vacancyTwo.setDescriptionVacancy("Empresa importante solicita contador con 5 años de experiencia titulado.");
             vacancyTwo.setDatePublished(date.parse("09-02-2019"));
             vacancyTwo.setSalary(12000.0);
+            vacancyTwo.setTopVacancy(0);
+            vacancyTwo.setImage("companyTwo.png");
 
 
             //create vacancy 3
@@ -98,15 +102,18 @@ public class HomeController {
             vacancyThree.setDescriptionVacancy("Empresa internacional solicita ingeniero mecanico para mantenimiento de la instalacion electrica");
             vacancyThree.setDatePublished(date.parse("10-02-2019"));
             vacancyThree.setSalary(45000.0);
+            vacancyThree.setTopVacancy(0);
 
             //create vacancy 4
 
             Vacancy vacancyFour = new Vacancy();
             vacancyFour.setId(4);
             vacancyFour.setNameVacancy("Diseñador Grafico");
-            vacancyThree.setDescriptionVacancy("Se solicita Diseñador Grafico para publicidad de la empresa");
+            vacancyFour.setDescriptionVacancy("Se solicita Diseñador Grafico para publicidad de la empresa");
             vacancyFour.setDatePublished(date.parse("11-02-2019"));
             vacancyFour.setSalary(6000.0);
+            vacancyFour.setTopVacancy(1);
+            vacancyFour.setImage("companyFour.png");
 
             //adding 4 vacancy objects to list
 

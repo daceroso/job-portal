@@ -9,6 +9,8 @@ public class Vacancy {
     private String descriptionVacancy;
     private Date datePublished;
     private Double salary;
+    private Integer topVacancy;
+    private String image="no-image.png";
 
     public Integer getId() {
         return id;
@@ -48,6 +50,22 @@ public class Vacancy {
 
     public void setSalary(Double salary) {
         this.salary = salary;
+    }
+
+    public Integer getTopVacancy() {
+        return topVacancy;
+    }
+
+    public void setTopVacancy(Integer topVacancy) {
+        this.topVacancy = topVacancy;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     @Override
