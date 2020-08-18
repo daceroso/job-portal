@@ -18,6 +18,8 @@
             <th>Date Published</th>
             <th>Salary</th>
             <th>Top</th>
+            <th>Detail</th>
+            <th>Delete</th>
         </tr>
 
         <tr th:each="vacancy: ${vacancies}">
@@ -35,6 +37,12 @@
                <span th:if="${vacancy.topVacancy == 1}" class="badge bg-success"> Yes</span>
                <span th:unless="${vacancy.topVacancy == 1}" class="badge bg-danger"> No</span>
            </td>
+            <td>
+                <a th:href="@{/vacancies/view/{id} (id=${vacancy.id}) }"  class="btn btn-success">Detail</a>
+            </td>
+            <td>
+                <a th:href="@{/vacancies/delete(id=${vacancy.id})}"  class="btn btn-danger">Delete</a>
+            </td>
         </tr>
     </table>
 

@@ -1,4 +1,4 @@
-package com.job.jobplatform.Controller;
+package com.job.jobplatform.controller;
 
 import com.job.jobplatform.model.Vacancy;
 import org.springframework.stereotype.Controller;
